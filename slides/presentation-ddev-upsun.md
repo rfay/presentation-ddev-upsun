@@ -28,7 +28,7 @@
 1. Clone the project from GitHub. 
 2. `upsun project:set-remote dsatecjxcdp24` to set up the remote config
 3. `ddev config --docroot=web --project-type=drupal11` just for basic DDEV configuration
-4. Add .env:
+4. Add `.ddev/.env`:
 ```env
 PLATFORM_PROJECT=dsatecjxcdp24
 PLATFORM_ENVIRONMENT=main
@@ -51,6 +51,7 @@ ddev add-on get ddev/ddev-upsun
 
 ## Get the database and files
 
+* `ddev start`
 * `ddev pull upsun` or `upsun db:dump` and load with `ddev import-db`
 * `ddev drush cim`
 
@@ -61,3 +62,10 @@ ddev add-on get ddev/ddev-upsun
 * Local Drupal11 site which tries to imitate and use Upsun configuration
 * Discovered dependent add-ons installed
 * Local project ready for development. `ddev drush cex` and commit results when needed.
+
+## Resources
+
+* Add-on: https://github.com/ddev/ddev-upsun
+* DDEV: https://ddev.com/get-started/
+* Drupal on Upsun Flex: https://docs.upsun.com/get-started/stacks/drupal.html
+* DDEV Discord: https://ddev.com/s/discord
