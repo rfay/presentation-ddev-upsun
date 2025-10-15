@@ -188,8 +188,21 @@
     object-fit: contain;
 }
 
+/* Upsun Logo styling */
+.upsun-logo {
+    height: 160px !important;
+    width: auto !important;
+    max-height: none !important;
+    max-width: none !important;
+    margin: 20px auto;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
+    object-fit: contain;
+}
+
 /* Ensure logo centering on title slide */
-.reveal .slides section:first-child .ddev-logo {
+.reveal .slides section:first-child .ddev-logo,
+.reveal .slides section:first-child .upsun-logo {
     margin: 20px auto !important;
     display: block !important;
     text-align: center !important;
